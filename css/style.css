@@ -16,6 +16,28 @@
     box-sizing: border-box;
 }
 
+/*regole btn*/
+.btn-radius{
+    border-radius: 15px;
+}
+
+.btn-white{
+    background-color: var(--white-color);
+    color: var(--text-color);
+}
+
+.btn-violet{
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.btn-blu{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+
 /*regole comuni*/
 .container{
     max-width: 600px;
