@@ -4,6 +4,8 @@
 
     --secondary-color: #9792e4;
 
+    --fine-colore: #333333;
+
     --text-color: #000;
     --white-color: #fff;
 }
@@ -30,6 +32,10 @@
 
 .align-items{
     align-items: center;
+}
+
+.mb-30px{
+    margin-bottom: 30px;
 }
 
 
@@ -80,22 +86,34 @@ header{
     background-color: var(--white-color);
     color: var(--secondary-color);
 }
+
+.about-us .container{
+    padding: 0 1rem;
+}
+
+.transparent{
+    background-color: var(--secondary-color);
+}
+
+.transparent .container{
+    width: 80%;
+    text-align: center;
+}
 /*fine main*/
 
 
+/*inizio footer*/
+footer{
+    background-color: var(--fine-colore);
+    text-align: center;
+}
 
+.footer .container{
+    width: 70%;
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/*fine footer*/
 
 
 
@@ -141,6 +159,24 @@ header{
     .benefit .card{
         width: calc((100% - 2rem ) / 2);
     }
+
+    .about-us .container{
+        display: flex;
+    }
+
+    .about-us .text{
+        width: 60%;
+        
+    }
+
+    .about-us .profilo{
+        width: 40%;
+    }
+
+    .transparent .container{
+        width: 80%;
+    }
+
     
 }
 
@@ -153,4 +189,9 @@ header{
     .benefit .card{
         width: calc((100% - 4rem) / 3);
     }
+
+    .transparent .container{
+        width: 70%;
+    }
+
 }
