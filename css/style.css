@@ -77,6 +77,15 @@ body{
     margin: 20px 0;
 }
 
+.mt-20px{
+    margin-top: 20px;
+}
+
+/*
+.font20px{
+    font-size: 70px;
+}
+*/
 
 
 /*inizio header*/
@@ -106,35 +115,72 @@ header{
 
 
 /*inizio main*/
+    /*Prima sezione*/
+
 .container .card{
     background-color: var(--primary-color-light);
     color: var(--text-first-section);
     margin: 1rem 0.5rem;
     border-radius: 10px;
     padding: 15px 40px;
-    
-
 }
 
 .container-card .card:first-child .content{
     width: 100%;
+    text-align: left;
 }
 
+.container-card .card{
+    text-align: center;
+}
+
+.container-card h1, .container-card i{
+    color: var(--primary-color);
+}
+
+.container-card .card:first-child i{
+    color: var(--white-color);
+}
+
+    /*seconda sezione*/
 .strategic{
     background-color: var(--secondary-color);
+    color: var(--white-color);
 }
 
 .strategic .column{
     margin: 2rem 1rem;
 }
 
+    /*terza sezione*/
 .partners .card{
     background-color: var(--secondary-color);
 }
 
+.partners h6, .partners h1, .partners p{
+    text-align: center;
+}
+
+.partners h1{
+    color: var(--secondary-color);
+}
+
+.partners .card{
+    color: var(--white-color);
+}
+
+   
+
+    /*quarta sezione*/
 .benefit {
     background-color: var(--secondary-color);
     padding: 1rem 0;
+}
+
+.benefit > h1{
+    color: var(--white-color);
+    text-align: center;
+    font-size: 40px;
 }
 
 .benefit .card{
@@ -142,10 +188,20 @@ header{
     color: var(--secondary-color);
 }
 
+.benefit .card h1{
+    font-size: 70px;
+}
+
+.benefit .card p{
+    color: var(--text-first-section);
+}
+
+    /*quinta sezione*/
 .about-us .container{
     padding: 0 1rem;
 }
 
+    /*sesta sezione*/
 .transparent{
     background-color: var(--secondary-color);
 }
