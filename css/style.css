@@ -56,8 +56,30 @@ header{
     background-color: var(--primary-color);
     margin: 1rem 0.5rem;
     border-radius: 10px;
+    padding: 15px;
 }
 
+.strategic{
+    background-color: var(--secondary-color);
+}
+
+.strategic .column{
+    margin: 2rem 1rem;
+}
+
+.partners .card{
+    background-color: var(--secondary-color);
+}
+
+.benefit {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+}
+
+.benefit .card{
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+}
 /*fine main*/
 
 
@@ -99,9 +121,26 @@ header{
         width: calc( 33% - 1rem);
     }
 
+    .strategic .container{
+        display: flex;
+    }
 
+    .strategic .column{
+        width: 50%;
+    }
 
+    .partners .card{
+        display: flex;
+    }
 
+    .benefit .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .benefit .card{
+        width: calc((100% - 2rem ) / 2);
+    }
     
 }
 
@@ -109,5 +148,9 @@ header{
 @media screen and (min-width: 992px) {
     .container{
         max-width: 950px;
+    }
+
+    .benefit .card{
+        width: calc((100% - 4rem) / 3);
     }
 }
