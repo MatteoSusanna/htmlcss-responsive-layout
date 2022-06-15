@@ -42,7 +42,7 @@
 .container{
     max-width: 600px;
     margin: auto;
-}
+} 
 
 .flex{
     display: flex;
@@ -63,8 +63,10 @@
 
 
 /*inizio header*/
+
 header{
     background-color: var(--primary-color);
+    height: 80px;
 }
 
 .container{
@@ -72,8 +74,11 @@ header{
 }
 
 .container .logo, .container .menu{
-    height: 80px;
-    background-color: var(--secondary-color);
+    line-height: 80px;
+}
+
+.container .menu i{
+    color: var(--white-color);
 }
 
 /*fine header*/
@@ -143,6 +148,7 @@ footer{
 /*inizio media*/
 
 @media screen and (min-width: 768px) {
+    /*Prima sezione*/
     .container{
         max-width: 740px;
     }
@@ -150,17 +156,20 @@ footer{
     .container-card{
         flex-wrap: wrap;
         display: flex;
+        justify-content: space-between;
     }
 
     .container-card .card:first-child{
         display: flex;
-        width: calc(66% - 1rem);
+        width: calc(66% - 2rem);
     }
 
     .container-card .card{
-        width: calc( 33% - 1rem);
+        display: flex;
+        width: calc( 33% - 2rem);
     }
 
+    /*Seconda sezione*/
     .strategic .container{
         display: flex;
     }
@@ -169,19 +178,24 @@ footer{
         width: 50%;
     }
 
+    /*Terza sezione*/
     .partners .card{
         display: flex;
     }
 
+    /*Quarta sezione*/
     .benefit .container{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .benefit .card{
-        width: calc((100% - 2rem ) / 2);
+        margin-left: 0;
+        width: calc( (100% - 2rem ) / 2 );
     }
 
+    /*Quinta sezione*/
     .about-us .container{
         display: flex;
     }
@@ -195,6 +209,7 @@ footer{
         width: 40%;
     }
 
+    /*Sesta sezione*/
     .transparent .container{
         width: 80%;
     }
@@ -206,10 +221,10 @@ footer{
 @media screen and (min-width: 992px) {
     .container{
         max-width: 950px;
-    }
+    }  
 
     .benefit .card{
-        width: calc((100% - 4rem) / 3);
+        width: calc( ( 100% - 3rem ) / 3 );
     }
 
     .transparent .container{
