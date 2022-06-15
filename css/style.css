@@ -8,6 +8,7 @@
 
     --text-color: #000;
     --white-color: #fff;
+    --text-first-section: #696969;
 }
 
 *{
@@ -16,9 +17,15 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: sans-serif;
+}
+
 /*regole btn*/
 .btn-radius{
     border-radius: 15px;
+    padding: 8px 8px;
+    border: none
 }
 
 .btn-white{
@@ -34,6 +41,8 @@
 .btn-blu{
     background-color: var(--primary-color);
     color: var(--white-color);
+    font-size: 17px;
+    padding: 5px 20px;
 }
 
 
@@ -60,10 +69,17 @@
     margin-bottom: 30px;
 }
 
+.mr-10px{
+    margin-right: 10px;
+}
+
+.m-top-bot20px{
+    margin: 20px 0;
+}
+
 
 
 /*inizio header*/
-
 header{
     background-color: var(--primary-color);
     height: 80px;
@@ -73,8 +89,13 @@ header{
     padding: 0 10px;
 }
 
+.container .menu ul{
+    display: none;
+}
+
 .container .logo, .container .menu{
     line-height: 80px;
+    padding: 0 10px;
 }
 
 .container .menu i{
@@ -86,10 +107,17 @@ header{
 
 /*inizio main*/
 .container .card{
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-light);
+    color: var(--text-first-section);
     margin: 1rem 0.5rem;
     border-radius: 10px;
-    padding: 15px;
+    padding: 15px 40px;
+    
+
+}
+
+.container-card .card:first-child .content{
+    width: 100%;
 }
 
 .strategic{
@@ -157,6 +185,7 @@ footer{
         flex-wrap: wrap;
         display: flex;
         justify-content: space-between;
+        
     }
 
     .container-card .card:first-child{
@@ -165,7 +194,6 @@ footer{
     }
 
     .container-card .card{
-        display: flex;
         width: calc( 33% - 2rem);
     }
 
@@ -221,7 +249,18 @@ footer{
 @media screen and (min-width: 992px) {
     .container{
         max-width: 950px;
-    }  
+    }
+    
+    .container .menu ul{
+        display: flex;
+        list-style: none;
+    }
+
+    .container .menu ul li{
+        padding-left: 20px;
+        color: var(--white-color);
+    }
+
 
     .benefit .card{
         width: calc( ( 100% - 3rem ) / 3 );
