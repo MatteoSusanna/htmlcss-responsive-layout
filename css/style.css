@@ -9,6 +9,7 @@
     --text-color: #000;
     --white-color: #fff;
     --text-first-section: #696969;
+    --text-end-section: #fdc15f;
 }
 
 *{
@@ -21,7 +22,9 @@ body{
     font-family: sans-serif;
 }
 
-/*regole btn*/
+/*******************
+Regole btn
+********************/
 .btn-radius{
     border-radius: 15px;
     padding: 8px 8px;
@@ -47,7 +50,9 @@ body{
 
 
 
-/*regole comuni*/
+/*********************
+Regole comuni
+**********************/
 .container{
     max-width: 600px;
     margin: auto;
@@ -81,14 +86,10 @@ body{
     margin-top: 20px;
 }
 
-/*
-.font20px{
-    font-size: 70px;
-}
-*/
 
-
-/*inizio header*/
+/**********************
+Inizio header
+***********************/
 header{
     background-color: var(--primary-color);
     height: 80px;
@@ -114,7 +115,9 @@ header{
 /*fine header*/
 
 
-/*inizio main*/
+/**********************
+Inizio main
+***********************/
     /*Prima sezione*/
 
 .container .card{
@@ -201,19 +204,37 @@ header{
     padding: 0 1rem;
 }
 
+.about-us .text h1{
+    color: var(--secondary-color);
+}
     /*sesta sezione*/
 .transparent{
     background-color: var(--secondary-color);
+    color: var(--white-color);
 }
 
 .transparent .container{
     width: 80%;
     text-align: center;
+    padding: 40px 0;
 }
+
+.transparent .container h1{
+    color: var(--text-end-section);
+    font-size: 70px;
+}
+
+.transparent .container button{
+    padding: 10px 40px;
+    color: var(--secondary-color);
+}
+
 /*fine main*/
 
 
-/*inizio footer*/
+/*********************
+Inizio footer
+**********************/
 footer{
     background-color: var(--fine-colore);
     text-align: center;
@@ -229,7 +250,11 @@ footer{
 
 
 
-/*inizio media*/
+/****************
+inizio media
+****************/
+
+/*TABLET*/
 
 @media screen and (min-width: 768px) {
     /*Prima sezione*/
@@ -301,7 +326,7 @@ footer{
     
 }
 
-
+/*DESKTOP*/
 @media screen and (min-width: 992px) {
     .container{
         max-width: 950px;
