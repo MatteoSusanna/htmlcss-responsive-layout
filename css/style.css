@@ -48,7 +48,13 @@ Regole btn
     padding: 5px 20px;
 }
 
-
+.btn-cerchio{
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 20px;
+    border: none;
+}
 
 /*********************
 Regole comuni
@@ -70,6 +76,17 @@ Regole comuni
     align-items: center;
 }
 
+.txt-center{
+    text-align: center;
+}
+
+.b-radius{
+    border-radius: 15px;
+}
+
+.padding{
+    padding: 8px 40px
+}
 .mb-30px{
     margin-bottom: 30px;
 }
@@ -86,7 +103,6 @@ Regole comuni
     margin-top: 20px;
 }
 
-
 /**********************
 Inizio header
 ***********************/
@@ -97,20 +113,22 @@ header{
 
 .container{
     padding: 0 10px;
+    height: 100%;
 }
 
 .container .menu ul{
     display: none;
 }
 
-.container .logo, .container .menu{
-    line-height: 80px;
+.container img, .container .menu{
     padding: 0 10px;
 }
 
 .container .menu i{
     color: var(--white-color);
 }
+
+
 
 /*fine header*/
 
@@ -125,12 +143,16 @@ Inizio main
     color: var(--text-first-section);
     margin: 1rem 0.5rem;
     border-radius: 10px;
-    padding: 15px 40px;
+    padding: 20px 0 0 0;
 }
 
 .container-card .card:first-child .content{
     width: 100%;
     text-align: left;
+}
+
+.card:first-child{
+    padding-left: 10px;
 }
 
 .container-card .card{
@@ -145,6 +167,10 @@ Inizio main
     color: var(--white-color);
 }
 
+.container-card img{
+    width: 50%;
+    display: block;
+}
     /*seconda sezione*/
 .strategic{
     background-color: var(--secondary-color);
@@ -153,11 +179,18 @@ Inizio main
 
 .strategic .column{
     margin: 2rem 1rem;
+    width: 100%;
 }
+
+.strategic .column img{
+    width: 100%;
+} 
 
     /*terza sezione*/
 .partners .card{
     background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 10px 50px;
 }
 
 .partners h6, .partners h1, .partners p{
@@ -168,8 +201,14 @@ Inizio main
     color: var(--secondary-color);
 }
 
-.partners .card{
-    color: var(--white-color);
+.partners .card .img{
+    width: 100%;
+    margin-right: 20px;
+}
+
+.partners .card img{
+    width: 100%;
+    border-radius: 50%;
 }
 
    
@@ -189,6 +228,7 @@ Inizio main
 .benefit .card{
     background-color: var(--white-color);
     color: var(--secondary-color);
+    padding: 20px;
 }
 
 .benefit .card h1{
@@ -204,9 +244,19 @@ Inizio main
     padding: 0 1rem;
 }
 
-.about-us .text h1{
+.about-us .text h1, .profilo h2{
     color: var(--secondary-color);
 }
+
+.profilo{
+    width: 100%;
+}
+
+.profilo img{
+    border-radius: 50%;
+    width: 50%;
+}
+
     /*sesta sezione*/
 .transparent{
     background-color: var(--secondary-color);
@@ -223,6 +273,11 @@ Inizio main
     color: var(--text-end-section);
     font-size: 70px;
 }
+
+.transparent .container h4{
+    font-size: 40px;
+}
+
 
 .transparent .container button{
     padding: 10px 40px;
@@ -265,17 +320,16 @@ inizio media
     .container-card{
         flex-wrap: wrap;
         display: flex;
-        justify-content: space-between;
-        
+        justify-content: space-between;        
     }
 
     .container-card .card:first-child{
-        display: flex;
-        width: calc(66% - 2rem);
+        display: block;
+        width: calc(66% - 1rem);
     }
 
     .container-card .card{
-        width: calc( 33% - 2rem);
+        width: calc( 33% - 1rem);
     }
 
     /*Seconda sezione*/
@@ -284,6 +338,11 @@ inizio media
     }
 
     .strategic .column{
+        width: 50%;
+    }
+
+    .strategic .column{
+        margin: 2rem 1rem;
         width: 50%;
     }
 
@@ -315,12 +374,22 @@ inizio media
     }
 
     .about-us .profilo{
-        width: 40%;
+        width: 30%;
+        margin-left: 70px;
+    }
+    
+    .profilo img{
+        border-radius: 50%;
+        width:100%;
     }
 
     /*Sesta sezione*/
     .transparent .container{
-        width: 80%;
+        width: 50%;
+    }
+
+    footer .container{
+        width: 50%;
     }
 
     
@@ -340,15 +409,27 @@ inizio media
     .container .menu ul li{
         padding-left: 20px;
         color: var(--white-color);
+        line-height: 80px;
     }
 
+    .container .menu a i{
+        display: none;
+    }
+
+    .container-card .card:first-child{
+        display: flex;
+    }
 
     .benefit .card{
         width: calc( ( 100% - 3rem ) / 3 );
     }
 
     .transparent .container{
-        width: 70%;
+        width: 50%;
+    }
+
+    footer .container{
+        width: 50%;
     }
 
 }
