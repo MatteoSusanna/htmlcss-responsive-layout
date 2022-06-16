@@ -120,7 +120,7 @@ header{
     display: none;
 }
 
-.container img, .container .menu{
+header .container img, header .container .menu{
     padding: 0 10px;
 }
 
@@ -202,12 +202,16 @@ Inizio main
 }
 
 .partners .card .img{
-    width: 100%;
-    margin-right: 20px;
+    width: 10rem;
+    height: 10em;
+    margin: 0 auto;
 }
 
 .partners .card img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
 }
 
@@ -349,6 +353,26 @@ inizio media
     /*Terza sezione*/
     .partners .card{
         display: flex;
+        padding: 20px 10px;
+    }
+    .partners .card p{
+        width: 70%;
+        padding: 40px;
+        text-align: left;
+    }
+
+    .partners .card .img{
+        width: 200px;
+        height: 200px;
+        margin-right: 20px;
+    }
+    
+    .partners .card img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
     }
 
     /*Quarta sezione*/
